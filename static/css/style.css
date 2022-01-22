@@ -17,17 +17,10 @@
 :root {
 	--background: #371554;
 	--background-alt: #451d67;
-	--text: #222222;
-	--text-alt: #666666;
+	--text: #eeeeee;
+	--text-alt: #cda0f4;
 	--accent: #ff0077;
 	--accent-alt: #490123;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--text: #eeeeee;
-		--text-alt: #cda0f4;
-	}
 }
 
 html {
