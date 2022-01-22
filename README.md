@@ -6,6 +6,14 @@
 
 A theme for Micro.blog that stands out. Based on my minimal Micro.blog theme, [Pure](https://github.com/chrishannah/pure).
 
+## Screenshots
+
+![post](images/post.png)
+
+![micro post](images/micro-post.png)
+
+![archive list](images/archive.png)
+
 ## Code Style
 
 This project makes use of the [Prettier](https://prettier.io) code formatter. This formatting will be done automatically in a GitHub Action, but most IDEs can be configured to run this locally.
