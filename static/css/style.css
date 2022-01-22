@@ -1,9 +1,26 @@
+@font-face {
+	font-family: 'Exo';
+	src: url('/fonts/exo/Exo-Italic-VariableFont_wght.ttf') format('woff2 supports variations'),
+	   url('/fonts/exo/Exo-Italic-VariableFont_wght.ttf') format('woff2-variations');
+	font-weight: 100 1000;
+	font-stretch: 25% 151%;
+}
+
+@font-face {
+	font-family: 'Exo';
+	src: url('/fonts/exo/Exo-VariableFont_wght.ttf') format('woff2 supports variations'),
+	   url('/fonts/exo/Exo-VariableFont_wght.ttf') format('woff2-variations');
+	font-weight: 100 1000;
+	font-stretch: 25% 151%;
+}
+
 :root {
 	--background: #371554;
 	--background-alt: #451d67;
 	--text: #222222;
 	--text-alt: #666666;
 	--accent: #ff0077;
+	--accent-alt: #490123;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,7 +33,7 @@
 html {
 	background-color: var(--background);
 	color: var(--text);
-	font-family: sans-serif;
+	font-family: 'Exo', sans-serif;
 	line-height: 1.8;
 	font-size: 18px;
 }
@@ -28,23 +45,36 @@ body {
 	padding: 0 16px;
 }
 
+h1 {
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+h2 {
+	font-weight: 500;
+}
+
+h3, h4, h5, h6 {
+	font-weight: 400;
+}
+
 a {
 	color: var(--accent);
 	text-decoration: none;
 }
 
 article a {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 article header {
-    text-align: center;
+	text-align: center;
 }
 
 article header h1 a {
 	color: var(--accent);
-    font-size: 1.6em;
-    text-transform: uppercase;
+	font-size: 1.6em;
+	text-transform: uppercase;
 }
 
 article header h1 {
@@ -53,7 +83,7 @@ article header h1 {
 
 article header time {
 	color: var(--text-alt);
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 main {
@@ -61,22 +91,23 @@ main {
 }
 
 body > header {
-    text-align: center;
+	text-align: center;
 }
 
 body > header h1 {
 	font-size: 4em;
-    text-transform: uppercase;
-    font-weight: 800;
+	text-transform: uppercase;
+	font-style: italic;
+	font-weight: 800;
 	padding-bottom: 0px;
 }
 
 menu {
 	list-style: none;
 	padding: 0;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.2em;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.2em;
 }
 
 menu li {
@@ -110,23 +141,26 @@ article {
 
 hr {
 	border: none;
-	overflow: visible;
-    width: 120%;
-    position: relative;
-    left: -10%;
-	text-align: center;
-    height: 16px;
-    border-top: 8px dotted var(--background-alt);
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+hr:after {
+	content: '∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿';
+	letter-spacing: -9.6px;
+	font-size: 60px;
+	color: var(--background-alt);
 }
 
 blockquote {
-	border-left: 2px solid var(--background-alt);
+	border-left: 4px solid var(--background-alt);
 	padding-left: 1em;
 	margin-left: 1em;
 }
 
 code {
-	color: var(--accent);
+	color: var(--accent-alt);
 	background-color: var(--accent);
 	padding: 3px;
 	border-radius: 0.4em;
@@ -145,6 +179,8 @@ pre code {
 img, video, iframe {
 	max-width: 100%;
 	height: auto;
+	border: 8px solid var(--background-alt);
+	border-radius: 8px;
 }
 
 .microblog_conversation {
