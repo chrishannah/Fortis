@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'Exo';
 	src: url('/fonts/exo/Exo-Italic-VariableFont_wght.ttf') format('woff2 supports variations'),
-	   url('/fonts/exo/Exo-Italic-VariableFont_wght.ttf') format('woff2-variations');
+		url('/fonts/exo/Exo-Italic-VariableFont_wght.ttf') format('woff2-variations');
 	font-weight: 100 1000;
 	font-stretch: 25% 151%;
 }
@@ -9,7 +9,7 @@
 @font-face {
 	font-family: 'Exo';
 	src: url('/fonts/exo/Exo-VariableFont_wght.ttf') format('woff2 supports variations'),
-	   url('/fonts/exo/Exo-VariableFont_wght.ttf') format('woff2-variations');
+		url('/fonts/exo/Exo-VariableFont_wght.ttf') format('woff2-variations');
 	font-weight: 100 1000;
 	font-stretch: 25% 151%;
 }
